@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Каталог товаров</title>
+</head>
+
+<body>
+    <header>
+        <h1>TrendTrove</h1>
+        <ul>
+            <li>Каталог товаров</li>
+            <a href="index2.html">
+                <li>Корзина</li>
+            </a>
+        </ul>
+        <p>+7(926) 355-77-12</p>
+    </header>
+    <div class="bloc">
+        <select id="categoryFilter">
+            <option value="Все">Все категории</option>
+            <option value="Детская одежда">Детская одежда</option>
+            <option value="Мужская одежда">Мужская одежда</option>
+            <option value="Женская одежда">Женская одежда</option>
+        </select>
+        <div class="carts">
+            <!-- Детская одежда -->
+            <div class="cart" data-id="1" data-category="Детская одежда">
+                <div class="text">
+                    <img src="./assets/img/image.png" alt="">
+                    <p>Блузка для девочек</p>
+                </div>
+                <section>
+                    <div class="t">
+                        <p>цена</p>
+                        <h1>999 руб.</h1>
+                    </div>
+                    <div class="color-selector">
+                        <p>Цвет:</p>
+                        <div class="color-options">
+                            <button data-color="белый" style="background: white; border: 1px solid #ddd"></button>
+                            <button data-color="розовый" style="background: pink"></button>
+                            <button data-color="голубой" style="background: lightblue"></button>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button data-size="XS">XS</button>
+                        <button data-size="S">S</button>
+                        <button data-size="M">M</button>
+                        <button data-size="L">L</button>
+                        <button data-size="XL">XL</button>
+                    </div>
+                </section>
+                <button class="btn" data-id="1">Добавить в корзину</button>
+            </div>
+
+            <div class="cart" data-id="2" data-category="Детская одежда">
+                <div class="text">
+                    <img src="./assets/img/image2.png" alt="">
+                    <p>Блузка для девочек</p>
+                </div>
+                <section>
+                    <div class="t">
+                        <p>цена</p>
+                        <h1>1 999 руб.</h1>
+                    </div>
+                    <div class="color-selector">
+                        <p>Цвет:</p>
+                        <div class="color-options">
+                            <button data-color="красный" style="background: red"></button>
+                            <button data-color="синий" style="background: blue"></button>
+                            <button data-color="зеленый" style="background: green"></button>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button data-size="XS">XS</button>
+                        <button data-size="S">S</button>
+                        <button data-size="M">M</button>
+                        <button data-size="L">L</button>
+                        <button data-size="XL">XL</button>
+                    </div>
+                </section>
+                <button class="btn" data-id="2">Добавить в корзину</button>
+            </div>
+
+            <!-- Мужская одежда -->
+            <div class="cart" data-id="5" data-category="Мужская одежда">
+                <div class="text">
+                    <img src="./assets/img/men1.jpg" alt="">
+                    <p>Мужская рубашка</p>
+                </div>
+                <section>
+                    <div class="t">
+                        <p>цена</p>
+                        <h1>2 499 руб.</h1>
+                    </div>
+                    <div class="color-selector">
+                        <p>Цвет:</p>
+                        <div class="color-options">
+                            <button data-color="белый" style="background: white; border: 1px solid #ddd"></button>
+                            <button data-color="черный" style="background: black"></button>
+                            <button data-color="серый" style="background: gray"></button>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button data-size="S">S</button>
+                        <button data-size="M">M</button>
+                        <button data-size="L">L</button>
+                        <button data-size="XL">XL</button>
+                    </div>
+                </section>
+                <button class="btn" data-id="5">Добавить в корзину</button>
+            </div>
+
+            <div class="cart" data-id="6" data-category="Мужская одежда">
+                <div class="text">
+                    <img src="./assets/img/men2.jpg" alt="">
+                    <p>Мужские джинсы</p>
+                </div>
+                <section>
+                    <div class="t">
+                        <p>цена</p>
+                        <h1>3 999 руб.</h1>
+                    </div>
+                    <div class="color-selector">
+                        <p>Цвет:</p>
+                        <div class="color-options">
+                            <button data-color="синий" style="background: blue"></button>
+                            <button data-color="черный" style="background: black"></button>
+                            <button data-color="серый" style="background: gray"></button>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button data-size="M">M</button>
+                        <button data-size="L">L</button>
+                        <button data-size="XL">XL</button>
+                        <button data-size="XXL">XXL</button>
+                    </div>
+                </section>
+                <button class="btn" data-id="6">Добавить в корзину</button>
+            </div>
+
+            <!-- Женская одежда -->
+            <div class="cart" data-id="7" data-category="Женская одежда">
+                <div class="text">
+                    <img src="./assets/img/women1.jpg" alt="">
+                    <p>Женское платье</p>
+                </div>
+                <section>
+                    <div class="t">
+                        <p>цена</p>
+                        <h1>3 599 руб.</h1>
+                    </div>
+                    <div class="color-selector">
+                        <p>Цвет:</p>
+                        <div class="color-options">
+                            <button data-color="красный" style="background: red"></button>
+                            <button data-color="черный" style="background: black"></button>
+                            <button data-color="бежевый" style="background: beige"></button>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button data-size="XS">XS</button>
+                        <button data-size="S">S</button>
+                        <button data-size="M">M</button>
+                    </div>
+                </section>
+                <button class="btn" data-id="7">Добавить в корзину</button>
+            </div>
+
+            <div class="cart" data-id="8" data-category="Женская одежда">
+                <div class="text">
+                    <img src="./assets/img/women2.jpg" alt="">
+                    <p>Женская блузка</p>
+                </div>
+                <section>
+                    <div class="t">
+                        <p>цена</p>
+                        <h1>2 199 руб.</h1>
+                    </div>
+                    <div class="color-selector">
+                        <p>Цвет:</p>
+                        <div class="color-options">
+                            <button data-color="белый" style="background: white; border: 1px solid #ddd"></button>
+                            <button data-color="розовый" style="background: pink"></button>
+                            <button data-color="голубой" style="background: lightblue"></button>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button data-size="XS">XS</button>
+                        <button data-size="S">S</button>
+                        <button data-size="M">M</button>
+                        <button data-size="L">L</button>
+                    </div>
+                </section>
+                <button class="btn" data-id="8">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h1>TrendTrove</h1>
+        <ul>
+            <li>Каталог товаров</li>
+            <li>Корзина</li>
+        </ul>
+        <p>+7(926) 355-77-12</p>
+    </footer>
+    <script type="module" src="./js/app.js"></script>
+    <div class="notification" id="notification"></div>
+</body>
+
+</html>
